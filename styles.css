@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>
-			Kelly Wright
-		</title>
-	</head>
-	<body>
-		<h1>
-			Kelly Wright
-		</h1>
-		<a href="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-0/p206x206/10462578_806305732722263_4681147642885832812_n.jpg?oh=34b24f738f27a1b8f47338d587e41edf&oe=58307E76">
-			<img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/10462578_806305732722263_4681147642885832812_n.jpg?oh=61c345fff61194bf1d05e4599be4472d&oe=58309465" />
-		</a>	
-		<p>
-			I'm Kelly Wright.  I was an analytical chemist for 9 years, but am transitioning to web development.  I have a 5-year-old daughter (Kaitlyn) and a husband (Brian).  I used to whitewater kayak, but now spend free time with my daughter, quilting, or at Bible study.
-		</p>
-	</body>
-</html>
+img {
+	margin: auto;
+	border: 2px solid black;
+}
+h1{
+	font-family: Tangerine;
+}
+p {
+	font-family: Arial;
+}
+html {
+	background color: #00626B
+}
+a {
+	color: blue;
+	text-decoration: none;
+}
