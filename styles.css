@@ -1,17 +1,34 @@
+html {
+	background-color: #3D6237;
+}
+h1 {
+	font-family: cursive;
+	color: #EFFCE6;
+	text-align: center;
+	font-size: 4em;
+}
 img {
 	margin: auto;
-	border: 2px solid black;
-}
-h1{
-	font-family: Cursive;
+	border: 2px solid white;
 }
 p {
-	font-family: Arial;
+	font-family: cursive;
+	color: #EFFCE6;
+	text-align: center;
+	font-size: 2em;
 }
-html {
-	background color: #00626B
-}
-a {
-	color: blue;
+a:link {
+	color: #101308;
 	text-decoration: none;
+}
+a:active {
+	color: #101308;
+}
+a:hover {
+	color: #EFFCE6;
+	text-decoration: none;
+}
+a:visited {
+	color: #824CB1;
+	text-deocoration: none;
 }
