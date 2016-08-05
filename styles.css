@@ -22,7 +22,7 @@ p {
 	font-size: 1.4em;
 }
 table {
-	text-align: center;
+	margin: 0 auto;
 }
 a:link {
 	color: #101308;
