@@ -8,34 +8,35 @@ h1 {
 	font-size: 2em;
 }
 img {
-	margin: auto;
+	margin: auto; /*not centering the picture*/
+	left: 50%;
 	border: 2px solid white;
 	align: center;
-	height: 400px;
-	width: 450px;
+	height: 450px;
+	width: 400px;
 }
 p {
 	font-family: cursive;
 	color: #EFFCE6;
 	text-align: center;
-	font-size: 1em;
+	font-size: 1.4em;
 }
 a:link {
 	color: #101308;
 	text-decoration: none;
-	font-size: 0.2em;
+	font-size: 0.9em;
 }
 a:active {
 	color: #101308;
-	font-size: 0.2em;
+	font-size: 0.9em;
 }
 a:hover {
 	color: #EFFCE6;
 	text-decoration: none;
-	font-size: 0.3em;
+	font-size: 1.1em;
 }
 a:visited {
 	color: #824CB1;
 	text-deocoration: none;
-	font-size: 0.2em;
+	font-size: 0.9em;
 }
