@@ -13,13 +13,16 @@ img {
 	border: 2px solid white;
 	align: center;
 	height: 360px;
-	width: 330px;
+	width: 340px;
 }
 p {
 	font-family: cursive;
 	color: #EFFCE6;
 	text-align: center;
 	font-size: 1.4em;
+}
+table {
+	text-align: center;
 }
 a:link {
 	color: #101308;
