@@ -5,30 +5,37 @@ h1 {
 	font-family: cursive;
 	color: #EFFCE6;
 	text-align: center;
-	font-size: 4em;
+	font-size: 2em;
 }
 img {
 	margin: auto;
 	border: 2px solid white;
+	align: center;
+	height: 400px;
+	width: 450px;
 }
 p {
 	font-family: cursive;
 	color: #EFFCE6;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1em;
 }
 a:link {
 	color: #101308;
 	text-decoration: none;
+	font-size: 0.2em;
 }
 a:active {
 	color: #101308;
+	font-size: 0.2em;
 }
 a:hover {
 	color: #EFFCE6;
 	text-decoration: none;
+	font-size: 0.3em;
 }
 a:visited {
 	color: #824CB1;
 	text-deocoration: none;
+	font-size: 0.2em;
 }
