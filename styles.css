@@ -8,11 +8,11 @@ h1 {
 	font-size: 2em;
 }
 img {
-	margin: auto; /*not centering the picture*/
-	left: 50%;
+	/*margin: auto; not centering the picture*/
+	margin left: 50%;
 	border: 2px solid white;
 	align: center;
-	height: 370px;
+	height: 360px;
 	width: 330px;
 }
 p {
