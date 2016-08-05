@@ -12,8 +12,8 @@ img {
 	left: 50%;
 	border: 2px solid white;
 	align: center;
-	height: 400px;
-	width: 370px;
+	height: 370px;
+	width: 330px;
 }
 p {
 	font-family: cursive;
@@ -24,19 +24,19 @@ p {
 a:link {
 	color: #101308;
 	text-decoration: none;
-	font-size: 0.9em;
+	font-size: 1.3em;
 }
 a:active {
 	color: #101308;
-	font-size: 0.9em;
+	font-size: 1.3em;
 }
 a:hover {
 	color: #EFFCE6;
 	text-decoration: none;
-	font-size: 1.1em;
+	font-size: 1.5em;
 }
 a:visited {
 	color: #824CB1;
 	text-deocoration: none;
-	font-size: 0.9em;
+	font-size: 1.3em;
 }
