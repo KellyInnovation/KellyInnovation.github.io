@@ -43,3 +43,14 @@ a:visited {
 	text-deocoration: none;
 	font-size: 1.3em;
 }
+
+nav {
+	text-align: center;
+	text-decoration: none;
+}
+nav span {
+	margin: 0px 15px;
+}
+
+
+
