@@ -10,6 +10,8 @@ header {
 	top: 5px;
 	width: 99%;
 	margin: 2 auto;
+	border: none;
+	height: 60px;
 }
 
 header:after {
@@ -36,21 +38,21 @@ table {
 	margin: 0 auto;
 }
 
-a:link {
+footer a:link {
 	color: #101308;
 	text-decoration: none;
 	font-size: 1.3em;
 }
-a:active {
+footer a:active {
 	color: #101308;
 	font-size: 1.3em;
 }
-a:hover {
+footer a:hover {
 	color: #824CB1;
 	text-decoration: none;
 	font-size: 1.5em;
 }
-a:visited {
+footer a:visited {
 	color: #EFFCE6;
 	text-deocoration: none;
 	font-size: 1.3em;
@@ -83,16 +85,24 @@ center {
 	font-family: cursive;
 	color: #EFFCE6;
 	float: left;
-	font-size: 18px;
+	font-size: 28px;
 	list-style-type: none;
+	margin-top: 5px;
 }
 
 .right-nav li {
-	color: #EFFCE6;
-	font-size: 14px;
-	padding: 2px 15px;
+	padding: 0px 15px;
 	float: right;
 	list-style-type: none;
+	margin-top: 5px;
+
+}
+
+.right-nav a {
+	color: #EFFCE6;
+	font-size: 24px;
+	font-family: cursive;
+	text-decoration: none;
 }
 
 .video {
