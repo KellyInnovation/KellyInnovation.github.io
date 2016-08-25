@@ -83,11 +83,15 @@ center {
 
 .name {
 	font-family: cursive;
-	color: #EFFCE6;
 	float: left;
 	font-size: 28px;
-	list-style-type: none;
 	margin-top: 5px;
+	list-style-type: none;
+}
+
+.name a {
+	color: #EFFCE6;
+	text-decoration: none;
 }
 
 .right-nav li {
