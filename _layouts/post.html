@@ -1,3 +1,7 @@
-{% include header.html %}
+---
+layout: page
+---
+
+<h2 class="post-h2">{{ page.title }}</h2>
+<h4 class="post-h4mk">{{ page.date | date: "%b %d, %Y" }}</h4>
 {{ content }}
-{% include footer.html %}
