@@ -28,8 +28,7 @@ body {
 
 img {
 	border: 2px solid white;
-	height: 360px;
-	width: 350px;
+	width: 400px;
 	margin-top: 90px;
 }
 
@@ -123,3 +122,25 @@ footer span {
 	margin-right: auto;
 }
 
+.post_title {
+	margin-left: auto;
+}
+
+.fa {
+	font-size: 30px;
+}
+
+.fa-facebook-official {
+	color: #3b5998;
+	background-color: white;
+}
+
+.fa-github {
+	background-color: #620b7d;
+	color: white;
+}
+
+.fa-linkedin-square {
+	color: #0077b5;
+	background-color: white;
+}
