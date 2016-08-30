@@ -10,19 +10,36 @@ My daughter (Kaitlyn), prefers birthday party themes not found on store shelves;
 Were beads and jewelry techniques expressed in JavaScript, it might look something like this:
 
 function peacockNecklace(beads) {
-	var bead = [goldBead, mediumBlue, smallLightBlue, largeBlue, green, copper, bronze];
+	var bead = [gold, mediumBlue, smallLightBlue, largeBlue, green,  bronze, purpleBlue];
+	
 	var ring;
-	var wire = + wire
-	var upperBody = []
-	var addBead = + bead[];
-	var beak = 2 * bead[0];
-	var head = bead[1];
-	var neck = 3 * bead[2];
-	var torso = bead[3];
-	for (var upperBody=0; upperBody<)
-	var upperBody = ((((wire + beak) + wire + ring) + wire + head) wire + neck) + torso);
-	for (var )
-		if (tailLength < 14) {
-
+	var wire;
+	var beak = wire + 2 * bead[0];
+	var head = wire + bead[1];
+	var neck = wire + 3 * bead[2];
+	var torso = wire + bead[3];
+	
+	var upperBody = [beak, head, ring, neck, torso];
+	
+	var leg = 0
+	if (leg < 4) {
+		leg += bead[0];
 	}
+	else {
+		leg += bead[5] + bead[0];
+	}
+	
+	var tailFeather = 0
+	for (var tail = 0; tail < tailFeather.length; tail++) {
+		if (tail < 14) {
+			tailFeather += bead[4];
+		}
+		else {
+			tailFeather += bead[5] + bead[6] + bead[5] + bead[4];
+		}
+	}
+	
+	var peacock = [upperBody.join(''), 2 * leg, 7 * tailFeather]
+	
+	return peacock.join('')
 }

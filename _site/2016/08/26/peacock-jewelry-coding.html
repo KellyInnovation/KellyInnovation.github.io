@@ -36,9 +36,9 @@
 			</ol>
 		</div>
 	</header>
-	<div class="container">
+	<div class="container site-container">
 		<div class="row">
-			<div class="col-sm-12 ">
+			<div class="col-sm-12">
 <h2 class="post-h2">A Peacock Necklace and JavaScript</h2>
 <h4 class="post-h4mk">Aug 26, 2016</h4>
 <p><img src="/peacockNecklace.jpg" class="peacock" /></p>
@@ -48,21 +48,38 @@
 <p>Were beads and jewelry techniques expressed in JavaScript, it might look something like this:</p>
 
 <p>function peacockNecklace(beads) {
-	var bead = [goldBead, mediumBlue, smallLightBlue, largeBlue, green, copper, bronze];
-	var ring;
-	var wire = + wire
-	var upperBody = []
-	var addBead = + bead[];
-	var beak = 2 * bead[0];
-	var head = bead[1];
-	var neck = 3 * bead[2];
-	var torso = bead[3];
-	for (var upperBody=0; upperBody&lt;)
-	var upperBody = ((((wire + beak) + wire + ring) + wire + head) wire + neck) + torso);
-	for (var )
-		if (tailLength &lt; 14) {</p>
+	var bead = [gold, mediumBlue, smallLightBlue, largeBlue, green,  bronze, purpleBlue];</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>} }
+<div class="highlighter-rouge"><pre class="highlight"><code>var ring;
+var wire;
+var beak = wire + 2 * bead[0];
+var head = wire + bead[1];
+var neck = wire + 3 * bead[2];
+var torso = wire + bead[3];
+
+var upperBody = [beak, head, ring, neck, torso];
+
+var leg = 0
+if (leg &lt; 4) {
+	leg += bead[0];
+}
+else {
+	leg += bead[5] + bead[0];
+}
+
+var tailFeather = 0
+for (var tail = 0; tail &lt; tailFeather.length; tail++) {
+	if (tail &lt; 14) {
+		tailFeather += bead[4];
+	}
+	else {
+		tailFeather += bead[5] + bead[6] + bead[5] + bead[4];
+	}
+}
+
+var peacock = [upperBody.join(''), 2 * leg, 7 * tailFeather]
+
+return peacock.join('') }
 </code></pre>
 </div>
 

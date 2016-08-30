@@ -80,6 +80,9 @@ footer span {
 	margin: 0px 15px;
 }
 
+.site-container {
+	text-align: center;
+}
 
 .name {
 	font-family: cursive;
@@ -123,7 +126,7 @@ footer span {
 }
 
 .post_title {
-	margin-left: auto;
+
 }
 
 .fa {
