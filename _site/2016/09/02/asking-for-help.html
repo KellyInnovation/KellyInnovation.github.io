@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kelly Wright | Struggle Leads to Deep Learning, but Only After Asking for Help</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+	
+	<!-- I was considering using another CSS file for the blog page, but realized I would have to include the base information there as well for things like the navigation bar. -->
+	<!--  normal styles.css-->
+	
+	<!--  -->
+</head>
+<body>
+	<header class="navbar navbar-fixed-top">
+		<div class="container nav-container">
+			<div class="navbar-header name">			
+				<a href="/">Kelly Wright</a>
+			</div>
+			<ol class="nav navbar-nav navbar-right">
+				<li>
+					<a href="/contact">Contact</a>
+				</li>
+				<li>
+					<a href="/blog">Blog</a>
+				</li>
+				<li>
+					<a href="/about">About</a>
+				</li>
+				<li>
+					<a href="/">Home</a>
+				</li>
+			</ol>
+		</div>
+	</header>
+	<div class="container site-container">
+		<div class="row">
+			<div class="col-sm-12">
+<h2 class="post-h2">Struggle Leads to Deep Learning, but Only After Asking for Help</h2>
+<h4 class="post-h4mk">Sep 02, 2016</h4>
+<p>I am learning more every day to stop and ask for help.  Often, in bootcamp, if I am struggling with a new concept, so are others.</p>
+
+<p>I find that I can learn more deeply when I program an aspect on my own.  This can be with assistance from online coding lessons or examples, forums, or existing code.  Alternatively, trial and error with an understanding of key elements results in greater retention once learned.  I believe it is the active process of arriving at the answer through hard work that plants certain concepts in my brain concretely.</p>
+
+<p>While I love the challenge to solve the problem, there are times when I do not possess the knowledge, and cannot find online help to create a solution.  This was one of those weeks: …enter JSON.</p>
+
+<p>My struggle started with an afternoon lab.  At first glance, the tasks seemed reasonable exercises in data manipulation:</p>
+<ul>
+  <li>Write a script that will
+    <ul>
+      <li>Show the Most Expensive Item</li>
+      <li>Show the Least Expensive Item</li>
+      <li>Show the Total Revenue</li>
+      <li>Show the Total Profit</li>
+      <li>Show the 10 Best Sellers</li>
+      <li>Show the Number Sold by Each Department</li>
+    </ul>
+  </li>
+</ul>
+
+<p>What first seemed an intriguing puzzle using Python3 coding, quickly became another lesson in asking for help.</p>
+
+<p>Merely importing the JSON data into Python took several minutes.  Once there, …what to do?<br />
+-Confirm the data is there by printing - check.
+-Learn that a JSON file opened through Python behaves like a dictionary - check.
+-Learn that dictionaries are not iterable - hmm, that one didn’t quite make sense.
+-Learn that you cannot use more than one index to describe a position in a dictionary - see above.</p>
+
+<p>How to get at the data - big problem #1.</p>
+
+<p>Firstly, one of my classmates with more experience tried to explain - didn’t quite get it.
+Looked at online examples, but didn’t find enough to draw conclusions.</p>
+
+<p>I asked for help.</p>
+
+<p>One answer, with one example, on the problem I had been staring at for 45 minutes was what I needed.</p>
+
+<p>An empty list and a for loop.  In the for loop, include the key name for the value of interest: 
+prices = []
+def accessing_values():
+	for item in json_data:
+		prices.append(item[‘price’])</p>
+
+<p>Asking for help was the key to solving this problem.</p>
+
+<p>I got it.  Include the key name to access that value….great!</p>
+
+<p>Wait, then came Friday’s morning warm-up: dictionaries again.</p>
+
+<p>I thought I understood it, but not well enough.  This time, the magic trick (at least it seemed like magic the first time I understood) of using the key name did not apply.  The key I needed to name were numbers 1 to 31 (for days of the month).  Surely, doing 31 for loops was not the best route…</p>
+
+<p>Nothing.  I understood all of the online dictionary examples in which they used the key name to access the values.  With this exercise, there was not a easily distinguishable key name.  Back to square one.  How do I get at a value in a dictionary?</p>
+
+<p>Again, the instructors were the only way I could learn this concept.  Matt Smith did a great job of explaining the process.  He took us through several examples, starting with real-world perception, then mimicking the concepts from the previous JSON in Python3 experience (i.e. using key names to call values), then to pulling values without known key names.</p>
+
+<p>It all finally made sense at an even deeper level than before.  This just teaches me once again, if I have a question, it is always best to ask.  A first hand explanation from someone with more experience, can solve the problem and help me learn more quickly.  The slow frustration and final relief of an explanation does make a concept stick, once learned.</p>
+
+<p>If not, there are always my notes, or asking for help again.</p>
+
+
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div>
+				<span>
+					<i class="fa fa-github" aria-hidden="true"></i>
+					<a href=https://github.com/KellyInnovation></a>
+				</span>				
+				<span>
+					<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+					<a href=https://www.linkedin.com/in/kelly-wright-80727560></a>
+				</span>
+				<span>
+					<i class="fa fa-facebook-official" aria-hidden="true"></i>
+					<a href=https://www.facebook.com/kelly.glasserwright></a>
+				</span>
+			</div>
+		</footer>
+	</body>
+</html>

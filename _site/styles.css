@@ -7,23 +7,13 @@ html {
 
 header {
 	background-color: #101308;
-	position: absolute;
-	top: 5px;
-	width: 99%;
-	margin: 2 auto;
-	border: none;
 	height: 60px;
-}
-
-header:after {
-	content: " ";
-	display: block;
-	height: -10px;
-	clear: both;
+	border: 0px;
 }
 
 body {
 	padding-top: 70px;
+	background-color: #3D6237;
 }
 
 img {
@@ -39,26 +29,6 @@ p {
 }
 table {
 	margin: 0 auto;
-}
-
-footer a:link {
-	color: #101308;
-	text-decoration: none;
-	font-size: 1.3em;
-}
-footer a:active {
-	color: #101308;
-	font-size: 1.3em;
-}
-footer a:hover {
-	color: #824CB1;
-	text-decoration: none;
-	font-size: 1.5em;
-}
-footer a:visited {
-	color: #EFFCE6;
-	text-deocoration: none;
-	font-size: 1.3em;
 }
 
 nav {
@@ -80,36 +50,28 @@ footer span {
 	margin: 0px 15px;
 }
 
+
+.navbar a {
+	font-family: cursive;
+	text-decoration: none;
+	color: #EFFCE6;
+	
+}
+
 .site-container {
 	text-align: center;
 }
 
 .name {
-	font-family: cursive;
 	float: left;
 	font-size: 28px;
 	margin-top: 5px;
-	list-style-type: none;
 }
 
-.name a {
-	color: #EFFCE6;
-	text-decoration: none;
-}
-
-.right-nav li {
-	padding: 0px 15px;
+.navbar-right li {
 	float: right;
 	list-style-type: none;
-	margin-top: 5px;
-
-}
-
-.right-nav a {
-	color: #EFFCE6;
 	font-size: 24px;
-	font-family: cursive;
-	text-decoration: none;
 }
 
 .video {
@@ -125,8 +87,9 @@ footer span {
 	margin-right: auto;
 }
 
-.post_title {
-
+.post-title {
+	text-decoration: none;
+	color: #101308
 }
 
 .fa {
