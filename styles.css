@@ -88,13 +88,16 @@ footer span {
 	font-family: cursive;
 	float: left;
 	font-size: 28px;
+	border-bottom: 0;
 	margin-top: 5px;
 	list-style-type: none;
+
 }
 
 .name a {
 	color: #EFFCE6;
 	text-decoration: none;
+	background-color: #101308
 }
 
 .right-nav li {
