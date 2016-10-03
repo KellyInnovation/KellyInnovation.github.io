@@ -110,3 +110,7 @@ footer span {
 	color: #0077b5;
 	background-color: white;
 }
+
+.blog-post-content {
+	text-align: left;
+}
