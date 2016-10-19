@@ -24,9 +24,10 @@ img {
 
 p {
 	color: #EFFCE6;
-	text-align: center;
+	text-align: left;
 	font-size: 1.4em;
 }
+
 table {
 	margin: 0 auto;
 }
@@ -35,6 +36,7 @@ nav {
 	text-align: center;
 	text-decoration: none;
 }
+
 nav span {
 	margin: 0px 15px;
 }
@@ -113,4 +115,17 @@ footer span {
 
 .blog-post-content {
 	text-align: left;
+}
+
+.resume {
+	width: 100%;
+	height: 1100px;
+
+}
+
+.about-paragraph {
+	margin: 70px;
+	background-color: #EFFCE6;
+	color: #101308;
+	border-radius: 5px;
 }

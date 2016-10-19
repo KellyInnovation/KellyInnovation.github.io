@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Object Oriented Programming: Being a Good Project Manager
+title: 'Object Oriented Programming: Being a Good Project Manager'
 ---
 
 Python classes and object oriented programming (OOP) have been some of the hardest concepts thus far to fully understand.  Just when I feel like I am getting closer to understanding, I learn more about OOP and have to rethink everything I know.  That being said, what Matt said today combined with Nick’s help from yesterday are starting to come together into a more refined concept of classes and the strengths of OOP.

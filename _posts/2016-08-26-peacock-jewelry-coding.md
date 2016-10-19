@@ -3,7 +3,7 @@ layout: post
 title: A Peacock Necklace and JavaScript
 ---
 
-<img src="/photos/peacockNecklace.jpg" class="peacock"/>
+<img src="/photos/peacockNecklace.jpg" class="peacock" />
 
 My daughter (Kaitlyn), prefers birthday party themes not found on store shelves; this year is no exception.  For her 6th birthday, her request is a peacock theme.  While Chuck-E-Cheese (or similar centers for youthful, celebratory pandemonium) may eliminate the need for peacock themed decorations, I still want to incorporate her favorite bird into her big day.  The result is the peacock necklace shown above. 
 

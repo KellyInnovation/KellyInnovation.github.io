@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction to Django: Our First Week
+title: 'Introduction to Django: Our First Week'
 ---
 
 This week, we started Django.  I am mostly impressed with its power.  It is surprising how much is built into this framework and easily accessible.

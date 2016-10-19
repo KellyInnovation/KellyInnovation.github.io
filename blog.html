@@ -4,7 +4,7 @@ title: Blog
 ---
 
 {% for post in site.posts %}
-<h2 ><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
-<h3>{{ post.date | date: "%b %d, %Y" }}</h3>
-<p>{{ post.excerpt}} ...</p>
+<h2 class="post"><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
+<h3 class="post">{{ post.date | date: "%b %d, %Y" }}</h3>
+<p class="post">{{ post.excerpt}} ...</p>
 {% endfor %}

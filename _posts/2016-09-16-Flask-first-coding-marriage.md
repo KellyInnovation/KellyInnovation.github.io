@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Flask: A First Marriage of Coding Languages
+title: 'Flask: A First Marriage of Coding Languages'
 ---
 
 Having recently been to my sister’s wedding, I can appreciate this week’s marriage of HTML, CSS, and Python via Flask.  
