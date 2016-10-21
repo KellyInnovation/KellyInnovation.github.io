@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kelly Wright | My First Week of Bootcamp</title>
+	<title>Kelly Wright | Introduction to Django: Our First Week</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	
@@ -53,17 +53,25 @@
 	</header>
 	<div class="container site-container">
 
-<h2 class="post">My First Week of Bootcamp</h2>
-<h4 class="post">Aug 24, 2016</h4>
-<p class="blog-post-content"><p>I was an analytical chemist (think CSI for printers) for almost nine years.  I enjoyed some aspects, but felt under-challenged by others.  While I enjoyed solving problems, repairing instruments, and teaching colleagues, I enjoyed creative and innovative ventures even more.</p>
+<h2 class="post">Introduction to Django: Our First Week</h2>
+<h4 class="post">Sep 23, 2016</h4>
+<p class="blog-post-content"><p>This week, we started Django.  I am mostly impressed with its power.  It is surprising how much is built into this framework and easily accessible.</p>
 
-<p>Looking for a change in career with more creativity, innovation, and learning, I  joined the <a href="https://en.wikipedia.org/wiki/Coding_Bootcamp">Web Development Bootcamp</a> at <a href="https://www.awesomeinc.org">Awesome Inc</a> in Lexington, KY.</p>
+<p>Starting the project with many directories is a matter of a few commands:
+	mkvirtualenv project_name
+	pip install django==1.8.14 (or preferred version)
+	django-admin startproject project_name
+	cd project_name
+	./manage.py migrate
+	./manage.py startapp first_app_name</p>
 
-<p>As of day three, web development promises to combine not only my drive for continual learning, but my creativity and technical mindset as well.</p>
+<p>That is it.  With those few commands, Django creates a main project directory, with a project sub-directory of the same name.  The main project directory comes preloaded with an <strong>init</strong>.py, admin.py, models.py, tests.py, and views.py.  There is also a manage.py for the whole project.  Many of these files are preloaded with appropriate information (settings.py has base directory, installed apps (with many preinstalled), a secret key (which we assign to one stored on our local environment), templates, and many more.</p>
 
-<p>It can be at times frustrating (Javascript while loops), but also satisfying to solve problems with code.  I enjoy seeing front-end results with HTML and CSS, and Jekyll is making changes easier.</p>
+<p>Creating the new app, with ./manage.py startup app_name similarly, adds many needed files.  The apps are the heart of the project.  They define models, templates, and views.  They define what makes the website function, how various aspects are connected, and how the pages look.</p>
 
-<p>With very little prior coding experience, I am looking forward to the coming weeks of learning and growth.</p>
+<p>The inherent interconnectedness also allows for very concise language.  Each file is a matter of a few lines.  My only trouble with the concise language is ensuring I add connections in all needed places to make everything run cohesively.  These connections include urls within an app, url to connect app to project, adding apps to the settings file and importing where needed.</p>
+
+<p>My other concern is how best to use tests to check functionality along the way.  Overall, I appreciate the work done by Django.</p>
 </p>
 
 

@@ -4,7 +4,9 @@
 	<title>Kelly Wright | Blog</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Tangerine" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/styles.css">
 	
 	<!-- I was considering using another CSS file for the blog page, but realized I would have to include the base information there as well for things like the navigation bar. -->
@@ -14,40 +16,43 @@
 </head>
 <body>
 	<header class="navbar navbar-fixed-top">
-		<div class="container nav-container">
-			<div class="navbar-header name">			
-				<a href="/">Kelly Wright</a>
+		<nav>
+            <div class="container">
+				<div class="navbar-header">
+                    <button 
+                        type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#header-navbar-collapse"
+                    >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/" class="header-name">Kelly Wright</a>
+                </div>
+                <div id="header-navbar-collapse" class="collapse navbar-collapse">
+                    <ol class="nav navbar-nav navbar-right">
+	                        
+						<li class="active">
+							<a href="/">Home</a>
+						</li>
+						<li>
+							<a href="/about">About</a>
+						</li>
+						<li>
+							<a href="/blog">Blog</a>
+						</li>
+						<li>
+							<a href="/contact">Contact</a>
+						</li>
+					</ol>
+				</div>
 			</div>
-			<ol class="nav navbar-nav navbar-right">
-				<li>
-					<a href="/contact">Contact</a>
-				</li>
-				<li>
-					<a href="/blog">Blog</a>
-				</li>
-				<li>
-					<a href="/about">About</a>
-				</li>
-				<li>
-					<a href="/">Home</a>
-				</li>
-			</ol>
-		</div>
+		</nav>
 	</header>
 	<div class="container site-container">
 
-
-<h2 class="post"><a class="post-title" href="/2016/10/19/2016-09-23-intro-to-django.html"></a></h2>
-<h3 class="post">Oct 19, 2016</h3>
-<p class="post"> ...</p>
-
-<h2 class="post"><a class="post-title" href="/2016/10/19/2016-09-16-Flask-first-coding-marriage.html"></a></h2>
-<h3 class="post">Oct 19, 2016</h3>
-<p class="post"> ...</p>
-
-<h2 class="post"><a class="post-title" href="/2016/10/19/2016-09-09-OOP-project-manager.html"></a></h2>
-<h3 class="post">Oct 19, 2016</h3>
-<p class="post"> ...</p>
 
 <h2 class="post"><a class="post-title" href="/2016/10/07/style-and-functionality.html">My Style of Matching Style and Function</a></h2>
 <h3 class="post">Oct 07, 2016</h3>
@@ -58,6 +63,24 @@
 <h2 class="post"><a class="post-title" href="/2016/09/30/Django-user-challenges.html">Branching Out and Django Users</a></h2>
 <h3 class="post">Sep 30, 2016</h3>
 <p class="post"><p>We are continuing with Django this week.  This class is pushing me to new levels of online presence I had never expected.  We started the class by signing up for Trello, Slack, StackOverflow, and GitHub.  Before starting class, it was an introvert’s challenge for me to just slack a link to my GitHub page, much less post a non-prework comment.</p>
+
+ ...</p>
+
+<h2 class="post"><a class="post-title" href="/2016/09/23/intro-to-django.html">Introduction to Django: Our First Week</a></h2>
+<h3 class="post">Sep 23, 2016</h3>
+<p class="post"><p>This week, we started Django.  I am mostly impressed with its power.  It is surprising how much is built into this framework and easily accessible.</p>
+
+ ...</p>
+
+<h2 class="post"><a class="post-title" href="/2016/09/16/Flask-first-coding-marriage.html">Flask: A First Marriage of Coding Languages</a></h2>
+<h3 class="post">Sep 16, 2016</h3>
+<p class="post"><p>Having recently been to my sister’s wedding, I can appreciate this week’s marriage of HTML, CSS, and Python via Flask.</p>
+
+ ...</p>
+
+<h2 class="post"><a class="post-title" href="/2016/09/09/OOP-project-manager.html">Object Oriented Programming: Being a Good Project Manager</a></h2>
+<h3 class="post">Sep 09, 2016</h3>
+<p class="post"><p>Python classes and object oriented programming (OOP) have been some of the hardest concepts thus far to fully understand.  Just when I feel like I am getting closer to understanding, I learn more about OOP and have to rethink everything I know.  That being said, what Matt said today combined with Nick’s help from yesterday are starting to come together into a more refined concept of classes and the strengths of OOP.</p>
 
  ...</p>
 
@@ -80,22 +103,30 @@
  ...</p>
 
 
-		</div>
-		<footer>
-			<div>
-				<span>
-					<i class="fa fa-github" aria-hidden="true"></i>
-					<a href=https://github.com/KellyInnovation></a>
-				</span>				
-				<span>
-					<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-					<a href=https://www.linkedin.com/in/kelly-wright-80727560></a>
-				</span>
-				<span>
-					<i class="fa fa-facebook-official" aria-hidden="true"></i>
-					<a href=https://www.facebook.com/kelly.glasserwright></a>
-				</span>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+	<footer>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xs-4 col-xs-offset-4">
+					<div class="col-xs-4">
+						<i class="fa fa-github" aria-hidden="true"></i>
+						<a href=https://github.com/KellyInnovation></a>
+					</div>
+					<div class="col-xs-4">
+						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						<a href=https://www.linkedin.com/in/kelly-wright-80727560></a>
+					</div>
+					<div class="col-xs-4">
+						<i class="fa fa-facebook-official" aria-hidden="true"></i>
+						<a href=https://www.facebook.com/kelly.glasserwright></a>
+					</div>
+				</div>
 			</div>
-		</footer>
-	</body>
+		</div>
+	</footer>
+	
 </html>
