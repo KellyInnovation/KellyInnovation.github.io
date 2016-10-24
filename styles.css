@@ -57,6 +57,7 @@ label {
 .navbar a {
 	text-decoration: none;
 	color: #EFFCE6;	
+	padding-bottom: 0;
 }
 
 .header-name {
@@ -118,9 +119,23 @@ label {
 	margin-top: 0px;
 }
 
+.index-photo-skills {
+	margin-top: 30px;
+}
+
 .panel-heading {
 	background-color: #101308;
 	color: #EFFCE6;
 	text-align: center;
 	font-size: 24px;
+}
+
+.skills {
+	padding: 1px;
+}
+
+.skills-body {
+	background-color: #3D6237;
+	color: #EFFCE6;
+	font-size: 16px;
 }
