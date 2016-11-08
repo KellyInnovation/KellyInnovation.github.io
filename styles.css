@@ -95,6 +95,11 @@ label {
 	margin-right: auto;
 }
 
+.index-headshot {
+	width: 250px;
+	margin-top: 10px;
+}
+
 .post-title {
 	text-decoration: none;
 	color: #101308
@@ -123,6 +128,12 @@ label {
 	margin-top: 30px;
 }
 
+.panel {
+	background-color: #EFFCE6;
+	border-color: #101308;
+}
+
+
 .panel-heading {
 	background-color: #101308;
 	color: #EFFCE6;
@@ -130,12 +141,23 @@ label {
 	font-size: 24px;
 }
 
+.skills-headings {
+	background-color: #EFFCE6;
+	color: #101308;
+	text-align: center;
+	font-size: 24px;
+	border-color: #101308;
+}
 .skills {
 	padding: 1px;
+	background-color: #101308;
 }
 
 .skills-body {
-	background-color: #3D6237;
-	color: #EFFCE6;
+	background-color: #EFFCE6;
+	color: #101308;
 	font-size: 16px;
+	font-weight: bold;
+	height: 190px;
+	border-bottom: 1px;
 }
