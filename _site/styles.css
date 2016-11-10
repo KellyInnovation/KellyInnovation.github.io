@@ -22,7 +22,7 @@ body {
 img {
 	border: 2px solid white;
 	width: 400px;
-	margin-top: 90px;
+
 }
 
 p {
@@ -95,6 +95,10 @@ label {
 	margin-right: auto;
 }
 
+.about-me-photo {
+	margin-top: 90px;
+}
+
 .index-headshot {
 	width: 250px;
 	margin-top: 10px;
@@ -145,6 +149,28 @@ label {
 	color: #EFFCE6;
 	text-align: center;
 	font-size: 24px;
+}
+
+.modal-header {
+	background-color: #101308;
+	color: #EFFCE6;
+	text-align: center;
+	font-size: 24px;
+}
+
+.modal-header h2 {
+	color: #EFFCE6;
+}
+
+.modal-preview-image {
+	width: 100%	
+}
+
+.carousel-caption {
+	color: #101308;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: left;
 }
 
 .skills-headings {
