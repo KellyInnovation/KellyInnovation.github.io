@@ -1,5 +1,5 @@
 html {
-	background-color: #3D6237;
+	background-color: #457825;
 	margin: 0;
 	padding: 0;
 	font-family: 'PT Sans', sans-serif;
@@ -15,7 +15,7 @@ header {
 
 body {
 	padding-top: 90px;
-	background-color: #3D6237;
+	background-color: #457825;
 	padding-bottom: 70px;
 }
 
@@ -86,7 +86,7 @@ label {
 #header-navbar-collapse {
 	background-color: #101308;
 	margin-top: 12px;
-	padding-bottom: 20px;
+
 }
 
 .profile-image {
