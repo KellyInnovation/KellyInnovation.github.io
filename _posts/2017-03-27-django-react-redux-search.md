@@ -9,7 +9,7 @@ This will be with a Django backend and a React / Redux frontend.
 In order to be useful, tables should be searchable by hobby, category, city, or state.
 
 
-##Model:
+**Model**:
 
 ``` [python]
 from django.db import models
@@ -50,7 +50,7 @@ Hobby has a ForeignKey to Profile to connect the two and allow for multiple hobb
 
 Create Serializers to connect to the frontend.
 
-##Serializer: 
+**Serializer**: 
 ``` [python]
 from django.contrib.auth.models import User
 from rest_framework import serializers
@@ -113,7 +113,7 @@ The HobbyField creates a way to access information about hobbies from the profil
 
 In order to connect the Django backend to the React / Redux front end, create urls for API.
 
-##URLs for API:
+**URLs for API**:
 ``` [python]
 from django.conf.urls import include, url
 from rest_framework import routers
@@ -136,7 +136,7 @@ The frontend API calls use profile and hobby as part of the url designations to 
 
 These API calls are made in actions (the API_CALL constant functionality was defined in middleware - not shown).
 
-##apiActions:
+**apiActions**:
 ``` [javascript]
 import {
   API_CALL,
@@ -175,7 +175,7 @@ export function getProfileSearch(query) {
 
 Constants (type in all caps) are listed in constants.
 
-##apiConstants:
+**apiConstants**:
 ``` [javascript]
 export const BASE_URL = '/api';
 
@@ -186,7 +186,7 @@ export const GET_PROFILE_SEARCH = 'GET_PROFILE_SEARCH';
 
 The functions from apiActions are then called inside the Component mapStateToDispatch.
 
-##HobbyList Component:
+**HobbyList Component**:
 ``` [javascript]
 import React from 'react';
 import { connect } from 'react-redux';
@@ -330,7 +330,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(HobbyDashboard);
 
 The profile and hobbies states seen in the Component come from the reducers.
 
-##profileReducer:
+**profileReducer**:
 ``` [javascript]
 import {
     GET_PROFILES,
@@ -353,7 +353,7 @@ const profileReducer = (state = {}, action) => {
 export default profileReducer;
 ```
 
-##hobbyReducer:
+**hobbyReducer**:
 ``` [javascript]
 import {
     GET_HOBBIES,
@@ -378,7 +378,7 @@ Each reducer is listed in the main reducer.
 The calls and search functions initiated in the React Redux frontend then need the Django backend to filter the results and return a new set of profiles to the profile state, through the GET_PROFILE_SEARCH, on the profile reducer (also the type on the getProfileHobbySearch apiAction function).
 
 
-##Viewsets:
+**Viewsets**:
 ``` [python]
 from rest_framework import viewsets, generics
 from django_filters.rest_framework import OrderingFilter
