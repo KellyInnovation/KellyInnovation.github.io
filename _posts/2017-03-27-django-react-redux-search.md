@@ -10,13 +10,15 @@ The format is a table with hobbies, categories, cities, and states.
 In order to be useful, tables should be searchable by hobby, category, city, or state.
 How to create a table of information with a search option is the intent of this post.
 
+
+##**Model**:
+
 To start the project, begin by creating the models needed.  Create one model for additional profile information associated with a given user.  To connect those with similar hobbies within a region, include city and state in the profile.  
 
 The OneToOneField to User (built into Django) connects profile to a first name, last name, and email address, thereby providing additional, future connectivity.
 
 On the hobby model, include a name for the hobby, the category of the hobby, a description and a ForeignKey to the profile.  The ForeignKey connects hobby to the profile and allows for multiple hobbies to attach to one profile (allowing for one person to have many hobbies).
 
-**Model**:
 
 ``` [python]
 from django.db import models
@@ -54,6 +56,9 @@ class Hobby(models.Model):
     description = models.TextField('description', blank=True, null=True)
 ```
 
+
+##**Serializer**: 
+
 Create Serializers to connect to the frontend.
 In the Serializers, list all fields in the model and define additional ones needed for GET, POST, or PUT requests.  
 
@@ -61,7 +66,7 @@ While hobby_profile is a field on Hobby, and can therefore be listed as a field,
 
 The HobbyField creates a way to access information about hobbies from the profile state.  For example, on the front end, profile.hobby.name will return the name of a hobby associated with that profile without additional API calls.
 
-**Serializer**: 
+
 ``` [python]
 from django.contrib.auth.models import User
 from rest_framework import serializers
@@ -121,11 +126,14 @@ class CurrentUserSerializer(serializers.ModelSerializer):
         )
 ```
 
+
+##**URLs for API**:
+
 In order to connect the Django backend to the React / Redux front end, create urls for the Django, API app.
 
 'profile' and 'hobby' are utilized on the frontend in the urls of the api calls.
 
-**URLs for API**:
+
 ``` [python]
 from django.conf.urls import include, url
 from rest_framework import routers
@@ -144,11 +152,14 @@ urlpatterns = [
 ]
 ```
 
+
+##**apiActions**:
+
 On the frontend, these API calls are made in actions.
 
 Each API call from the frontend to the backend requires a unique action function to designate the type of call (the API_CALL constant functionality was defined in middleware - not shown); the endpoint (a unique constant); and the url (which defines which backend connections to make).
 
-**apiActions**:
+
 ``` [javascript]
 import {
   API_CALL,
@@ -185,9 +196,12 @@ export function getProfileSearch(query) {
 }
 ```
 
+
+##**apiConstants**:
+
 Constants connect the various attributes associated with their use (actions and reducers).
 
-**apiConstants**:
+
 ``` [javascript]
 export const BASE_URL = '/api';
 
@@ -196,9 +210,20 @@ export const GET_HOBBIES = 'GET_HOBBIES';
 export const GET_PROFILE_SEARCH = 'GET_PROFILE_SEARCH';
 ```
 
+
+##**Reducers**:
+
+
 The profile and hobbies states seen in the Component come from the reducers.
 
-**profileReducer**:
+In each reducer, list all constants associated with that state. For example, in profile, GET_PROFILES and GET_PROFILE_SEARCH both relate to the user profile model.  Calling either of these constants (which connect to actions), will update the state of profile.
+
+Always return state as a default. 
+
+Each reducer is listed in the main reducer.
+
+
+##**profileReducer**:
 ``` [javascript]
 import {
     GET_PROFILES,
@@ -221,7 +246,8 @@ const profileReducer = (state = {}, action) => {
 export default profileReducer;
 ```
 
-**hobbyReducer**:
+
+##**hobbyReducer**:
 ``` [javascript]
 import {
     GET_HOBBIES,
@@ -241,15 +267,28 @@ const hobbyReducer = (state = {}, action) => {
 export default hobbyReducer;
 ```
 
-Each reducer is listed in the main reducer.
 
-The functions from apiActions are then called inside the Component mapStateToDispatch.
+##**Components**:
 
-**HobbyList Component**:
+
+Everything seen happens in the component.
+
+
+##**HobbyList Component Imports**:
+
+Start a component with imports.
+Most importantly, import 'React'.
+
+'connect' from react-redux connects the various aspects of the page (the HobbyDashboard html class, the mapStateToDispatch, and mapStateToProps).
+
+'map' is a way to loop through the profiles of all people.
+
+From the actions imports pull in the needed functions.
+
+
 ``` [javascript]
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
 import { map } from 'ramda';
 
 import {
@@ -260,11 +299,20 @@ import {
     getApplicantCourseFilter,
     getCourses,
 } from '../actions/apiActions';
+```
 
-import {
-    formUpdate,
-} from '../actions/formActions';
 
+##**HobbyList Component props and constants**
+
+Start the react component by naming the class.
+
+Next, define the static propTypes.  These include any states used, ComponentDidMount, and any functions used in the component not needed for actions.  State propTypes are '.object'.  Functions are '.func'.
+
+Connect each propType to the props, most will be part of the constant this.props.
+
+Define additional constants.  
+
+```[javascript]
 class HobbyDashboard extends React.Component {
     static propTypes = {
         profile: React.PropTypes.object,
@@ -317,7 +365,9 @@ class HobbyDashboard extends React.Component {
                 </option>
             );
         })(hobbies.results)) : null;
+    ```
 
+    ```[javascript]
         return (
             <div className="container-fluid">
                 <h1>Hobby Connection Board</h1>
@@ -357,7 +407,9 @@ class HobbyDashboard extends React.Component {
         );
     }
 }
+```
 
+```[javascript]
 function mapStateToProps(state) {
     return {
         profile: state.profile,
@@ -377,7 +429,6 @@ function mapDispatchToProps(dispatch) {
                 const update = {
                     [field]: value,
                 };
-                dispatch(formUpdate(update));
                 dispatch(getProfileHobbySearch());
             };
         },
@@ -387,11 +438,12 @@ function mapDispatchToProps(dispatch) {
 export default connect(mapStateToProps, mapDispatchToProps)(HobbyDashboard);
 ```
 
+The functions from apiActions are then called inside the Component mapStateToDispatch.
 
 The calls and search functions initiated in the React Redux frontend then need the Django backend to filter the results and return a new set of profiles to the profile state, through the GET_PROFILE_SEARCH, on the profile reducer (also the type on the getProfileHobbySearch apiAction function).
 
 
-**Viewsets**:
+##**Viewsets**:
 ``` [python]
 from rest_framework import viewsets, generics
 from django_filters.rest_framework import OrderingFilter
